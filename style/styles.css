@@ -1,0 +1,38 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+body.dark-mode .mainDiv {
+    box-shadow: 0px 0px 20px 10px #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    padding: 10px;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+input, select, button {
+    margin: 10px;
+    
+}
+
+.mainDiv {
+    background-color: #a5a5a5;
+    box-shadow: 0px 0px 20px 10px #0b0c0c;
+    border-radius: 10px;
+}
+
+.dark-mode-btn {
+    border-color: #000000;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Consumo de Energía ⚡</title>
+  <link rel="stylesheet" href="style/styles.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+</head>
+<body class="container-fluid justify-content-center align-items-center">
+    <div class="row">
+    <div class="col-2"></div>
+  <div class="col-9 mainDiv" id="mainDiv">
+    <h1>Calculadora de Consumo de Energía ⚡💰</h1>
+
+    <button class="btn btn-secundary dark-mode-btn" id="toggle-mode">Cambiar modo 🌙</button>
+    
+    <form id="formulario">
+      <input  class="form-control mb-3 mt-3"type="text" id="nombre" placeholder="Nombre del aparato" required />
+      <input class="form-control mb-3 mt-3" type="number" id="potencia" placeholder="Potencia (W)" required />
+      <input class="form-control mb-3 mt-3" type="number" id="horas" placeholder="Horas de uso diario" required />
+      <select id="categoria" class="btn btn-outline-secondary mb-3 mt-3">
+          <option value="iluminacion">Iluminación</option>
+          <option value="cocina">Cocina</option>
+          <option value="entretenimiento">Entretenimiento</option>
+          <option value="otros">Otros</option>
+        </select>
+        <button type="submit btn" class="btn btn-outline-secondary mb-3 mt-3">Agregar</button> 
+    </form>
+
+    <div id="lista-aparatos"></div>
+
+    <div id="resultado">
+      <h2>Consumo total: <span id="total-kwh">0</span> kWh/mes</h2>
+      <h2>Costo estimado: $<span id="costo-mensual">0.00</span></h2>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+  <script src="script/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+
+  </script>
+</body>
+</html>
